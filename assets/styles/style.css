@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-family: 'DM Sans', sans-serif;
+}
+html, body{
+    min-height: 100vh;
+}
+body{
+    background-color: #f8f6f2;
+}
+h1,h2,h3{
+    font-weight: bold;
+}
+img, svg{
+    display: block;
+    max-width: 100%;
+}
+header{
+    background-color: #fff;
+    position: relative;
+}
+header .wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+header h1{
+    font-size: 1.6rem;
+    font-family: 'Lobster', sans-serif;
+
+}
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+article{
+    /* border: solid 1px #000; */
+    background-color: #fff;
+}
+article:nth-child(2){
+    
+    margin: 12px 0;
+}
+article h2{
+    font-size: 1.2rem;
+    padding: 1rem 1rem 0;
+}
+article ol{
+    padding: 1rem;
+}
+article ol li{
+    padding: 5px;
+    margin-left: 2rem;
+}
+article:first-child h1{
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+footer{
+    background-color: #fff;
+    border-top: solid 1px #ddd;
+    padding: 1rem;
+}
+footer .wrapper{
+    text-align: center;
+    padding: 1rem;
+}
+footer .wrapper li{
+    list-style: none;
+}
+footer .wrapper li a{
+    text-decoration: none;
+}
+footer .wrapper:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .wrapper:last-child ul{
+    display: flex;
+}
+footer .wrapper:last-child ul svg{
+    margin: 1rem 8px;
+    width: 25px;
+    height: 25px;
+}
+.about, .connect{
+    margin-top: 12px;
+    font-size: 14px;
+}
+.copyright{
+    text-align: center;
+    margin: 12px;
+}
+.user-acc,
+.share-feature{
+    display: flex;
+    background-color: #fff;
+    padding: 1rem;
+    margin: 12px 0;
+}
+.share-feature {
+    flex-direction: column;
+
+}
+.share-feature a{
+    text-decoration: none;
+    border: solid 1px #ddd;
+    border-radius: 10px;
+    padding: 12px 1rem;
+    margin: 12px 0;
+    text-align: center;
+    color: inherit;
+}
+.user-acc img{
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.user-acc p:first-child{
+    font-weight: 500;
+}
+.user-acc p:nth-child(2){
+    font-size: 14px;
+}
+.user-acc p:nth-child(3){
+    margin-top: 4px;
+}
+.user-acc .info .wrapper p:nth-child(2){
+    color: #6d6d6d;
+}
+.user-acc .info .wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+.user-acc .info .wrapper p:first-child{
+    margin-right: 6px;
+}
+.user-acc svg,
+.share-feature svg{
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+}
+.share-feature svg{
+    margin-right: 12px;
+}
+.user-acc p:last-child,
+.share-feature a{
+    display: flex;
+    align-items: center;
+}
+.share-feature a{
+    justify-content: center;
+}
+.login-btn{
+    display: flex;
+    align-items: center;
+    border: solid 1px;
+    padding: 8px 1rem;
+    border-radius: 10px;
+    background-color: #ffb648;
+    color: #fff;
+    font-weight: 500;
+}
+.login-card{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.login-card svg{
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    margin-right: 12px;
+}
+.login-card .bg-login{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 300px;
+    height: 300px;
+}
+.login-card .bg-login img{
+    display: none;
+}
+.login-card h1{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+.login-card .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+.login-card .input-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.login-card .input-wrapper input[type=text]{
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: solid 1px #aaa;
+}
+.login-card .input-wrapper input[type=text]:first-child{
+    margin-bottom: 12px;
+}
+.login-card a{
+    font-size: 12px;
+    margin-top: 12px;
+}   
+.login-card button{
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 8px;
+    border: solid 1px #aaa;
+    cursor: pointer;
+}
+.d-flex{
+    display: flex;
+}
+#closeBtnLogin{
+    cursor: pointer;
+}
+@media screen and (min-width: 480px){
+    article figure img{
+        max-height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .user-acc .info .wrapper{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .login-card .bg-login{
+        width: 500px;
+        display: flex;
+        padding: 0;
+    }
+    .login-card h1{
+        padding-top: 0;
+    }
+    .login-card .bg-login img{
+        display: block;
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .login-card svg{
+        margin-top: 1rem;
+        transform: translateX(-50%);
+    }
+    .login-card .bg-login .container{
+        padding: 1rem;
+    }
+    footer .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .wrapper{
+        text-align: start;
+    }
+
+}
+
+@media screen and (min-width: 970px){
+    header{
+        border-bottom: solid 1px #ddd;
+    }
+    header .wrapper{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+    main {
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        padding: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    article{
+        border-radius: 10px;
+        box-shadow: #ddd 0 0 10px;
+    }
+    article figure img{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    aside{
+        width: 40%;
+        margin-left: 12px;
+    }
+    .content{
+        width: 60%;
+    }
+    .user-acc{
+        margin: 0;
+    }
+    .user-acc,
+    .share-feature{
+        box-shadow: #ddd 0 0 10px;
+        border-radius: 10px;
+    }
+    .user-acc img{
+        border: solid 2px #ddd;
+    }
+    footer .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
